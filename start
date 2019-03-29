@@ -1,0 +1,6 @@
+from ipywidgets import interact
+def plot(x,y):
+    plt.plot(x,y, 'ro' )
+    #plt.plot(y,z,'ro',color='black')
+
+interact(plot,x=np.arange(1,100),y=np.arange(1,100))
